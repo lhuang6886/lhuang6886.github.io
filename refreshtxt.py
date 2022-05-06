@@ -24,7 +24,7 @@ def git_push():
 
 while True:
     if keyboard.read_key() == "p":
-        with open('readme.txt', 'w') as f:
+        with open('readitems.txt', 'w') as f:
             for i in range(3):
                 f.write('file'+str(counter)+".json")
                 f.write('\n')
