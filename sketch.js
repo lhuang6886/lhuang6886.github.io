@@ -49,7 +49,7 @@ function setup() {
 
 function draw() {
   background(225);
-  r = map(touches.x, 0, width, -PI, PI)
+  r = map(touchX, 0, width, -PI, PI)
   noFill()
   stroke(255,0,0);
   strokeWeight(3);
