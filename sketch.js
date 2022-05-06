@@ -16,7 +16,9 @@ function setup() {
 
 
   let item1 = testjson[0][0][0].centroids
+  // print(item1);
   let item2 = testjson[0][0][0].speeds;
+  // print(item2);
 
   let xs = []
   let ys = []
@@ -29,7 +31,9 @@ function setup() {
   xmin = min(xs)
   ymin = min(ys)
   zmin = min(thicks)
-
+  print(xmin)
+  print(ymin)
+  print(zmin)
 
   for (let i=0; i<item1.length-1; i++){
     let thick = map(item2[i],0,15,300,50);
@@ -41,18 +45,24 @@ function setup() {
   xcent = xcent/pvectors.length
   ycent = ycent/pvectors.length
   zcent = zcent/pvectors.length
-
+  print(xcent)
+  print(ycent)
+  print(zcent)
 }
 
 
 
 function draw() {
   background(225);
+  // print(touches)
   r = map(mouseX, 0, width, -PI, PI)
-
+  // clear();
+  // fill(25);
   noFill()
   stroke(255,0,0);
   strokeWeight(3);
+  // translate(width/2,height/2)
+  // translate(-xcent,-ycent,-zcent)
   rotateY(r)
 
   push();
@@ -64,5 +74,12 @@ function draw() {
   }
   endShape();
   pop()
+//   fill(255,0,0);
+//   circle(50,50,10);
+//   for (let i=0; i<pvectors.length; i++){
+
+//     circle(pvectors[i].x, pvectors[i].y,10);
+
+//   }
 
 }
