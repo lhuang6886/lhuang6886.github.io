@@ -13,14 +13,14 @@ COMMIT_MESSAGE = 'comment from python script'
 counter=0
 
 def git_push():
-    try:
-        repo = Repo(PATH_OF_GIT_REPO)
-        repo.git.add(update=True)
-        repo.index.commit(COMMIT_MESSAGE)
-        origin = repo.remote(name='origin')
-        origin.push()
-    except:
-        print('Some error occured while pushing the code')    
+    # try:
+    repo = Repo(PATH_OF_GIT_REPO)
+    repo.git.add(update=True)
+    repo.index.commit(COMMIT_MESSAGE)
+    origin = repo.remote(name='origin')
+    origin.push()
+    # except:
+    #     print('Some error occured while pushing the code')    
 
 while True:
     if keyboard.read_key() == "p":
