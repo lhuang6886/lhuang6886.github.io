@@ -57,6 +57,7 @@ function draw() {
   r = map(mouseX, 0, width, -PI, PI)
   noFill();
   stroke(255,0,0);
+  strokeWeight(3);
   rotateY(r);
 
   push();
