@@ -60,9 +60,8 @@ function draw() {
   // fill(25);
   noFill()
   stroke(255,0,0);
-  strokeWeight(3);
+  // strokeWeight(3);
 
-  circle(50,50,10)
   rotateY(r)
 
   push();
