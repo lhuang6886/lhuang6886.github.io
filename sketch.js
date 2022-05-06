@@ -61,8 +61,8 @@ function draw() {
   noFill()
   stroke(255,0,0);
   strokeWeight(3);
-  // translate(width/2,height/2)
-  // translate(-xcent,-ycent,-zcent)
+
+  circle(50,50,10)
   rotateY(r)
 
   push();
@@ -74,12 +74,6 @@ function draw() {
   }
   endShape();
   pop()
-//   fill(255,0,0);
-//   circle(50,50,10);
-//   for (let i=0; i<pvectors.length; i++){
 
-//     circle(pvectors[i].x, pvectors[i].y,10);
-
-//   }
 
 }
