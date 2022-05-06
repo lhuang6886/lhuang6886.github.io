@@ -31,9 +31,9 @@ function setup() {
   xmin = min(xs)
   ymin = min(ys)
   zmin = min(thicks)
-  print(xmin)
-  print(ymin)
-  print(zmin)
+  // print(xmin)
+  // print(ymin)
+  // print(zmin)
 
   for (let i=0; i<item1.length-1; i++){
     let thick = map(item2[i],0,15,300,50);
@@ -54,15 +54,10 @@ function setup() {
 
 function draw() {
   background(225);
-  // print(touches)
   r = map(mouseX, 0, width, -PI, PI)
-  // clear();
-  // fill(25);
-  noFill()
+  noFill();
   stroke(255,0,0);
-  // strokeWeight(3);
-
-  rotateY(r)
+  rotateY(r);
 
   push();
 
