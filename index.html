@@ -1,18 +1,138 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Strokes</title>
-    <script src="libraries/p5.js" type="text/javascript"></script>
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laura Huang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:n,i,b,bi">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCre1CFJJG_V8HsQ-8vRhmmQCSLxpQHmgI",
+            authDomain: "laurahuang-1b51f.firebaseapp.com",
+            projectId: "laurahuang-1b51f",
+            storageBucket: "laurahuang-1b51f.appspot.com",
+            messagingSenderId: "891824071729",
+            appId: "1:891824071729:web:1ede7ee95809e7603ee110",
+            measurementId: "G-LXW4856XBL"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.com/libraries/fullPage.js"></script>
+    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
+
+    <nav class="navbar bg-light fixed-top" id="myMenu">
+        <div class="container-fluid">
+            <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/colorBlocks.html">Color Blocks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/3dTransmog.html">3D Transmogrification in Motion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/conductiveInk.html">Conductive Ink Sound Landscape</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="fullpage" style="top: 0; position: absolute">
+        <div class="section">
+            <div class="d-flex justify-content-center container">
+                <div class="word"></div>
+            </div>
+            <div class="vidfloatin d-flex justify-content-center">
+                <div class="col-sm-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VCNc0RvisEE" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="d-flex justify-content-center">
+                <div class="text-center text-wrap" style="width:60vw;">
+                    The term elemental transmogrification is inspired by the Transmogrifier, an invention from Calvin and Hobbes that would
+                    turn one thing into another. In this exhibition, each installation blends fundamental aspects of
+                    traditional art forms with digital technology, allowing one form to transform into another. Users are invited to interact
+                    with each installation, lending a hand in the transformation of physical to digital, 2D to 3D, visual to auditory, tangible
+                    to intangible.
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <figure class="col-sm-4">
+                        <img class="figure-img img-fluid rounded" src="assets/blocks.jpg" />
+                        <figcaption class="figure-caption">Color Blocks</figcaption>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img class="figure-img img-fluid rounded" src="assets/laptopView.jpg" />
+                        <figcaption class="figure-caption">3D Transmogrification in Motion</figcaption>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img class="figure-img img-fluid rounded" src="assets/fullWall.jpg" />
+                        <figcaption class="figure-caption">Conductive Ink Sound Landscape</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h1>About Me</h1>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-sm-4">
+                        <img class="figure-img img-fluid rounded mx-auto d-block" src="assets/hello2.png" />
+                    </div>
+                    <div class="col-sm-4 align-self-center">
+                        <div class="text-start text-wrap">
+                            I'm Laura, a tinkerer who gets excited about the interaction of art and technology. With a background
+                            in mechanical engineering, programming, and art, I like to experiment with
+                            mixing mediums and see what is created!
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
 
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1> stroke in 3d </h1>
-    <script src="sketch.js" type="text/javascript"></script>
-  </body>
+</body>
 </html>

@@ -1,0 +1,65 @@
+﻿body {
+    font-family: Raleway;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.word {
+    margin: auto;
+    color: black;
+    display: inline-block;
+    font-size: 4vw;
+    font-weight: 700;
+    animation-name: floatup;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+
+
+.section {
+    text-align: center;
+    position: relative;
+}
+
+.vidfloatin {
+    animation-name: videofadein;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes floatup {
+    0% {
+        top: 200px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes videofadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

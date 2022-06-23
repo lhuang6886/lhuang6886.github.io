@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laura Huang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../custom.css">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colorBlocks.html">Color Blocks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3dTransmog.html">3D Transmogrification in Motion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="conductiveInk.html">Conductive Ink Sound Landscape</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="display-2 text-center">Conductive Ink Sound Landscape</h1>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <figure class="col-sm-4">
+                <img class="figure-img img-fluid rounded center-block d-flex mx-auto" src="../assets/writing.jpg" />
+                <figcaption class="figure-caption text-center">writing with conductive ink</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img class="figure-img img-fluid rounded center-block d-flex mx-auto" src="../assets/attaching.jpg" />
+                <figcaption class="figure-caption text-center">attaching written character</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img class="figure-img img-fluid rounded center-block d-flex mx-auto" src="../assets/fullWall.jpg" />
+                <figcaption class="figure-caption text-center">full wall</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Transforming visual art into touch sensors to generate a sound composition.</p>
+        <p>
+            This installation experiments with a different type of ink — conductive ink. By using conductive ink,
+            written characters are transformed into touch-sensitive electronic components that are used to control sound.
+            Visual strokes on a physical medium become a small part in a group-created aural experience.
+        </p>
+        
+        <p>
+            Each character added to the installation is assigned a unique audio clip based on its conductivity, which gives a measure of
+            how much conductive ink is on the paper. These audio clips are then played at random intervals, but can be controlled by user touch
+            on the written character, much like a button. If the audio is playing and the user touches the conductive character, the audio will
+            pause and vice versa. As more and more characters are added to the exhibit, a group sound composition is slowly generated.
+        </p>
+    </div>
+
+    <div class="container">
+        <dl class="row">
+            <dt class="col-sm-3">Materials</dt>
+            <dd class="col-sm-9">Bare Conductive conductive paint, printer paper, brush, teensy 4.0 microcontroller, wire, 100k Ohm resistors, paperclips</dd>
+
+            <dt class="col-sm-3">Programming languages</dt>
+            <dd class="col-sm-9">
+                Arduino for capacitance measurements and sensing<br />
+                Processing for the UI and audio control
+            </dd>
+
+            <dt class="col-sm-3">Inspiration</dt>
+            <dd class="col-sm-9">
+                conductive silver inkjet printing & interactive touch sensing projects from a human computer interaction (HCI) class
+                at MIT taught by Professor Stefanie Mueller
+            </dd>
+
+            <dt class="col-sm-3">Collaborators</dt>
+            <dd class="col-sm-9">Joshua Sadinsky for audio clip recordings and Louisa Chang for exhibition graphics</dd>
+
+        </dl>
+</div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center mb-5">
+            <div class="col-sm-6">
+                <div class="ratio ratio-16x9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-XEIcK63nY" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

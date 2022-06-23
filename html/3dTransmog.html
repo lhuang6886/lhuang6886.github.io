@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laura Huang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../custom.css">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colorBlocks.html">Color Blocks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="3dTransmog.html">3D Transmogrification in Motion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conductiveInk.html">Conductive Ink Sound Landscape</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="display-2 text-center">3D Transmogrification in Motion</h1>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <figure class="col-sm-6">
+                <img class="figure-img img-fluid rounded center-block d-flex mx-auto" src="../assets/laptopView.jpg" />
+                <figcaption class="figure-caption text-center">writing with the body</figcaption>
+            </figure>
+            <figure class="col-sm-6">
+                <img class="figure-img img-fluid rounded center-block d-flex mx-auto" src="../assets/phoneView.jpg" />
+                <figcaption class="figure-caption text-center">rotating character in 3D</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Transforming 2D strokes written with the body into 3D forms on the web.</p>
+        <p>
+            This installation experiments with different concepts for the paper and brush used in traditional Chinese calligraphy. 
+            Instead of writing with a brush (毛筆) on paper (宣紙), people write with their bodies, their movements creating brush-like strokes 
+            on a digital screen. Physical movement is transformed into a 2D digital footprint that is not preserved on a physical medium but 
+            rather on the web in 3D form.
+        </p>
+        <p>
+            Body movements mimic traditional writing. Instead of using downward pressure to control stroke thickness, body speed alters the 
+            look of each stroke. Moving at faster speeds creates a thinner line. To start a stroke, the user would place one hand below their chin.
+            To stop a stroke, the user would place both hands below their chin. To indicate that they are done writing a character, 
+            the user would raise both hands above their head.
+        </p>
+        <p>
+            Once the user resets their writing, the completed character can be viewed online and manipulated in 3D space, representing 
+            another form of transmogrification. A 2D character written with the body in a singular location can now be rotated and viewed 
+            in 3D on a mobile device in any location.
+        </p>
+    </div>
+
+    <div class="container">
+        <dl class="row">
+            <dt class="col-sm-3">Materials</dt>
+            <dd class="col-sm-9">webcam</dd>
+
+            <dt class="col-sm-3">Programming languages</dt>
+            <dd class="col-sm-9">
+                Python for head detection, tracking and stroke drawing <br />
+                HTML, CSS and Javascript for web development using Firebase
+            </dd>
+
+            <dt class="col-sm-3">Special libraries</dt>
+            <dd class="col-sm-9">
+                model trained on crowd human using yolov5(m) architecture by Deepak C R <br />
+                movement in time animated character data files by Bryan Chung
+            </dd>
+            
+            <dt class="col-sm-3">Inspiration</dt>
+            <dd class="col-sm-9">
+                ground calligraphy (地書) <br />
+                Bryan Chung's Movement in Time project. The project extracts 4 Chinese martial art film fighting sequences and matches 
+                them against a database of 1000 Chinese characters written in the cursive calligraphic style.
+            </dd>
+
+            <dt class="col-sm-3">Collaborators</dt>
+            <dd class="col-sm-9">Louisa Chang for exhibition graphics</dd>
+
+        </dl>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center mb-5">
+            <div class="col-sm-6">
+                <div class="ratio ratio-16x9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PQLLBClXPk" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
